@@ -3,7 +3,7 @@ var path = require('path');
 var cwd = process.cwd();
 var Q = require('q');
 var fse = require('fs.extra');
-var conf = require('config.json');
+var conf = require('./config.json');
 var yuiPath = path.resolve(cwd, conf.yuiPath);
 fs.readdir(yuiPath, function(error, files) {
     files.forEach(function(item) {

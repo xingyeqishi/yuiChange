@@ -1,4 +1,4 @@
 {
-    yuiPath: '../fe.cos/yui/3.17.2/releasenotes',
-    oldVersion: '3.13.0'
+    "yuiPath": "../fe.cos/yui/3.17.2/releasenotes",
+    "oldVersion": "3.13.0"
 }
