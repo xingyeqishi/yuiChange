@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no" name="viewport"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>{{title}}</title>
+
+        <link href="/static/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+        <script src="/static/js/jquery-2.1.1.min.js"></script>
+        <style type="text/css">
+            html {margin:0; padding:0; }
+            body {margin:0; padding:0; }
+            .navbar .navbar-brand { color:#ff0; }
+            
+            .main { margin-top:50px; background:#f2f2f2; overflow:hidden;}
+            .left { background:#f2f2f2; position:fixed; top:50px; overflow:hidden;}
+            .left { list-style:none; }
+            .left li:first-child { margin-top:20px; }
+            .left li { padding:5px 10px; cursor:pointer;}
+            .left li a { font-size:16px; }
+            .left .selected a { color:#fff; }
+            .left .selected { background:#444; }
+            .right { background:#fff; }
+        </style>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">YUI升级变动</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <ul class="col-md-3 left">
+                {{#each data}}
+                    <li class="J-module" data-name="{{this}}"><a href="javascript:void(0);" >{{this}}</a></li>
+                {{/each}}
+            </ul>
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-9 J-detail-info right">
+
+            </div>
+        </div>
+
+        <script src="/static/js/base.js"></script>
+    </div> <!-- /container -->
+    </body>
+</html>
