@@ -14,7 +14,6 @@ app.set('views', appRoot + '/views');
 
 app.get('/', function(req, res) {
     getModules().then(function(data) {
-        console.log(data);
         res.render('index.handlebars', { title: '第三方资源平台', data: data });
     });
 });
